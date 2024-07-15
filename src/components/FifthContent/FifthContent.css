@@ -1,0 +1,66 @@
+.second-content {
+    position: relative;
+    text-align: center;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .height-half {
+    height: 550px;
+    object-fit: cover; /* Ensures the image covers the specified height while maintaining aspect ratio */
+  }
+  
+  .content-overlay {
+    position: relative;
+  }
+  
+  .centered-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust text color if necessary */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: adds a shadow for better text readability */
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #007bff; /* Adjust button background color if necessary */
+    border: none;
+  }
+  .second-content {
+    position: relative;
+  }
+  
+  .content-overlay {
+    position: relative;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .height-fixed {
+    height: 300px;
+    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+  }
+  
+  .centered-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .centered-content h2 {
+    margin-bottom: 20px;
+  }
+  
+  

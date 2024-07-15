@@ -1,0 +1,102 @@
+/* FirstContent.css */
+
+.image-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; /* Align items to the bottom of the container */
+    position: relative; /* Ensure relative positioning for absolute children */
+}
+
+.ball-image {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    border-radius: 50%; /* Ensure it's circular */
+    position: absolute;
+    bottom: -100px; /* Initial bottom position off screen */
+    left: -110px; /* Adjusted left position */
+    animation: slideInLeft 2s ease forwards; /* Animation definition */
+    clip-path: circle(50%); /* Use a circular clipping path */
+}
+
+.magnet-image {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    border-radius: 50%; /* Ensure it's circular */
+    position: absolute;
+    bottom: -100px; /* Initial bottom position off screen */
+    right: -110px; /* Adjusted right position */
+    animation: slideInRight 2s ease forwards; /* Animation definition */
+    clip-path: circle(50%); /* Use a circular clipping path */
+}
+
+.blurred-image {
+    filter: blur(3px); /* Apply blur effect */
+}
+
+.animated-logo-left-2 {
+    position: absolute;
+    bottom: -100px; /* Initial bottom position off screen */
+    left: -230px; /* Adjusted left position */
+    width: 200px;
+    opacity: 0.50;
+    height: 200px;
+    z-index: 10; /* Ensure it stays on top */
+    animation: slideInLeft2 2s ease forwards; /* Animation definition */
+    clip-path: circle(50%); /* Use a circular clipping path */
+}
+
+.animated-logo-right-2 {
+    position: absolute;
+    bottom: -100px; /* Initial bottom position off screen */
+    right: -230px; /* Adjusted right position */
+    width: 250px;
+    height: 250px;
+    opacity: 0.50;
+    z-index: 10; /* Ensure it stays on top */
+    animation: slideInRight2 2s ease forwards; /* Animation definition */
+    clip-path: circle(50%); /* Use a circular clipping path */
+}
+
+@keyframes slideInLeft {
+    0% {
+        bottom: -100px; /* Start bottom position off screen */
+        left: -130px; /* Adjusted left position */
+    }
+    100% {
+        bottom: 40px; /* End bottom position */
+        left: -130px; /* Adjusted left position */
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        bottom: -100px; /* Start bottom position off screen */
+        right: -10px; /* Adjusted right position */
+    }
+    100% {
+        bottom: 380px; /* End bottom position */
+        right: 0px; /* Adjusted right position */
+    }
+}
+
+@keyframes slideInLeft2 {
+    0% {
+        bottom: -100px; /* Start bottom position off screen */
+        left: -10px; /* Adjusted left position */
+    }
+    100% {
+        bottom: 350px; /* End bottom position */
+        left: 260px; /* Adjusted left position */
+    }
+}
+
+@keyframes slideInRight2 {
+    0% {
+        bottom: -10px; /* Start bottom position off screen */
+        right: -110px; /* Adjusted right position */
+    }
+    100% {
+        bottom: 0px; /* End bottom position */
+        right: 120px; /* Adjusted right position */
+    }
+}

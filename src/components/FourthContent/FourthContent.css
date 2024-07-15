@@ -1,0 +1,46 @@
+.container {
+  margin-top: 20px;
+}
+
+.card {
+  position: relative;
+  border: none; /* Remove card border */
+  margin: 0; /* Remove card margin */
+  padding: 0; /* Remove card padding */
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire card */
+}
+
+.card-img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* Optional: To make text readable */
+  color: white;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Ensure content is aligned to the bottom */
+}
+
+.card-img-overlay .card-title {
+  margin: 0;
+  color: white;
+  text-align: left;
+}
+
+.card-img-overlay .card-text {
+  margin: 0;
+  color: white;
+  text-align: left;
+}
+
+.large-card {
+  height: 100%;
+  overflow: hidden; /* Ensure content doesn't overflow */
+}

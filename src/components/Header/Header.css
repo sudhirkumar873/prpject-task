@@ -1,0 +1,221 @@
+/* Existing styles */
+
+
+
+
+.navbar-nav .nav-link {
+  padding: 0 2.5rem;
+  color: white;
+}
+
+.align-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%280, 0, 0, 0.5%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.full-width {
+  display: flex;
+  width: 100%;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.custom-border {
+  border: 1px solid #000;
+  /* Example border, adjust as needed */
+}
+
+.text-left {
+  text-align: left;
+}
+
+.big-text {
+  font-size: 3rem; /* Adjust the size as needed */
+  line-height: 1.2; /* Adjust line height for better readability */
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.25rem; /* Adjust the size as needed */
+  margin-bottom: 20px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-content-right {
+  padding-left: 150px;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.mt-5 {
+  margin-top: 3rem; /* Adjust margin as needed */
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem; /* Adjust margin as needed */
+}
+
+button {
+  font-size: 1.25rem; /* Adjust the size as needed */
+  padding: 10px 20px;
+}
+
+/* New styles for circular line */
+
+.position-relative {
+  position: relative;
+}
+
+.circular-line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200%;
+  height: 100%;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+}
+
+.small-logo {
+  position: absolute;
+  bottom: 10px; /* Initial bottom position */
+  right: 80px; /* Initial right position */
+  width: 80px;
+  height: 80px;
+  z-index: 10; /* Ensure it stays on top */
+  animation: slideIn 2s ease forwards; /* Animation definition */
+  clip-path: circle(50%); /* Use a circular clipping path */
+}
+
+@keyframes slideIn {
+  0% {
+    bottom: 10px; /* Start bottom position */
+    right: 80px; /* Start right position */
+  }
+  100% {
+    bottom: 380px; /* End bottom position */
+    right: 80px; /* Keep constant right position */
+  }
+}
+
+.small-logo-left {
+  position: absolute;
+  bottom: -10px; /* Initial bottom position off screen */
+  left: -110px; /* Adjusted left position */
+  width: 100px;
+  height: 100px;
+  border-radius: 80px;
+  z-index: 10; /* Ensure it stays on top */
+  animation: slideInUp 2s ease forwards; /* Animation definition */
+  clip-path: circle(50%); /* Use a circular clipping path */
+}
+
+@keyframes slideInUp {
+  0% {
+    bottom: -100px; /* Start bottom position off screen */
+    left: -110px; /* Adjusted left position */
+  }
+  100% {
+    bottom: 80px; /* End bottom position */
+    left: -110px; /* Adjusted left position */
+  }
+}
+
+/* New styles for centered logo */
+
+.centered-logo {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  width: 200px;
+  height: 200px;
+  z-index: 10;
+  border-radius: 80px;
+  animation: slideInCenter 2s ease forwards; /* Animation for centered logo */
+  
+  filter: blur(20px); /* Adjust blur amount as needed */
+}
+
+@keyframes slideInCenter {
+  0% {
+    transform: translate(-50%, 100%); /* Start from below the viewport */
+  }
+  100% {
+    transform: translate(-50%, -70%); /* End at center position */
+  }
+}
+
+/* Additional styles for top-left logo */
+
+.top-left-logo-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border:1px solid black;
+  transform: translate(0, 100%);
+  animation: slideInTopLeft 2s ease forwards;
+  z-index: 10;
+}
+
+@keyframes slideInTopLeft {
+  0% {
+    transform: translate(0, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.top-left-logo {
+  position: absolute;
+  top: 100px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+  width: 100px;
+  height: 100px;
+  z-index: 10;
+  animation: slideInTopLeft 2s ease forwards;
+  filter: blur(20px); /* Adjust blur amount as needed */
+}
+
+/* Header.css */
+
+.slide-one .background-color {
+  background-image: radial-gradient(circle at top right, #a05acf, #9a16f3, #a05acf);
+  position: relative;
+  height: 90vh;
+}
+
+.slide-two .background-color {
+  background-image: radial-gradient(circle at top right, #cf5aa2, #f316b1, #ebe4e8);
+  position: relative;
+  height: 90vh;
+}
+
+.slide-three .background-color {
+  background-image: radial-gradient(circle at top right, #a05acf, #169bf3, #a05acf);
+  position: relative;
+  height: 90vh;
+}
